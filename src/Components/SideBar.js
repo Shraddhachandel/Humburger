@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import store from "../Utils/store";
+
 
 const SideBar = () => {
 
@@ -8,7 +8,7 @@ if (!isMenuOpen) return null;
 
 
     return (
-        <div className="p-5 shadow-lg" >
+        <div className="p-5 shadow-lg w-48" >
             <ul>
                 <li>Home</li>
                 <li>Home</li>

@@ -1,11 +1,16 @@
-import SideBar from "./SideBar";
+import React from "react";
+import Button from "./Button";
 
 const ButtonList = () => {
-     return (
-        <div>
-            <SideBar/>
-        </div>
-     )
-}
+  const buttonNames = ["All", "Gaming", "Gardening","Watching","Riding", "Working","Singing", "Sawing", "Playing", "Dancing", "Making", "Reading", "Hoping"];
+
+  return (
+    <div className="flex">
+      {buttonNames.map((name, index) => (
+        <Button key={index} name={name} />
+      ))}
+    </div>
+  );
+};
 
 export default ButtonList;
